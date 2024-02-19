@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <title>Katrineholms färdtjänst</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logotype.svg" alt="" id="logotype"></a>
+
+        <div id="header-right">
+            <div class="accessability-button">
+                <span class="material-symbols-outlined">translate</span>
+                <span class="symbol-text">ÖVERSÄTT</span>
+            </div>
+
+            <div class="accessability-button">
+                <span class="material-symbols-outlined">hearing</span>
+                <span class="symbol-text">LYSSNA</span>
+            </div>
+
+            <button id="login-button" onclick="window.location.href='login.html'">
+                <span class="material-symbols-outlined">login</span>
+                LOGGA IN
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="login">
+            <div id="form-info">
+                <div class="info-title">
+                    <h1>Mina sidor</h1>
+                </div>
+                <div id="mina-sidor">
+                    <p>Namn: Ingrid Bergström</p>
+                    <p>Personnummer: 19520119-1122</p>
+                    <p>Adress: Bergsgatan 23A</p>
+                    <p>Postnummer: 928 32</p>
+                    <p>Ort: Katrineholm</p>
+                </div>
+            </div>
+            
+            <div id="form-buttons">
+                <button id="form-login" onclick="window.location.href='bokaresa.html'">BOKA RESA</button>
+                <button id="form-login" onclick="">MINA RESOR</button>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer>
+        <div>
+            <h3>KATRINEHOLM<br>FÄRDTJÄNST</h3>
+            <a href="#"><span class="material-symbols-outlined footer-link">mail</span>Kontakta oss</a>
+            <span><span class="material-symbols-outlined footer-link">call</span>Kundtjänst: 090 - 12 122</span>
+        </div>
+
+        <div>
+            <h3>SNABBLÄNKAR</h3>
+            <a href="#">Information</a>
+            <a href="#">Tillgänglighetsredogörelse</a>
+            <a href="#">GDPR</a>
+        </div>
+    </footer>
+</body>
+</html>

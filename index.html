@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <title>Katrineholms färdtjänst</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logotype.svg" alt="" id="logotype"></a>
+
+        <div id="header-right">
+            <div class="accessability-button">
+                <span class="material-symbols-outlined">translate</span>
+                <span class="symbol-text">ÖVERSÄTT</span>
+            </div>
+
+            <div class="accessability-button">
+                <span class="material-symbols-outlined">hearing</span>
+                <span class="symbol-text">LYSSNA</span>
+            </div>
+
+            <button id="login-button" onclick="window.location.href='login.html'">
+                <span class="material-symbols-outlined">login</span>
+                LOGGA IN
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div id="hero">
+            <div id="search">
+                <input type="text" placeholder="Vad vill du söka efter?">
+                <span class="material-symbols-outlined rounded-icon">search</span>
+            </div>
+
+            <div id="nav-buttons-big">
+                <a href="#">
+                    <div class="book">
+                        <div class="nav-buttons-big-left book">
+                            <span class="material-symbols-outlined rounded-icon">calendar_add_on</span>
+                        </div>
+                        <div class="nav-buttons-big-right">
+                            BOKA
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="contact">
+                        <div class="nav-buttons-big-left contact">
+                            <span class="material-symbols-outlined rounded-icon">call</span>
+                        </div>
+                        <div class="nav-buttons-big-right">
+                            KONTAKT
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="info">
+                        <div class="nav-buttons-big-left info">
+                            <span class="material-symbols-outlined rounded-icon">info</span>
+                        </div>
+                        <div class="nav-buttons-big-right">
+                            INFORMATION
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <article>
+            <h1>Välkommen till Katrineholms färdtjänst!</h1>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the  , when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            </p>
+            <p>
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            </p>
+
+            <button class="big-button">ANSÖK NU</button>
+        </article>
+    </main>
+
+    <footer>
+        <div>
+            <h3>KATRINEHOLM<br>FÄRDTJÄNST</h3>
+            <a href="#"><span class="material-symbols-outlined footer-link">mail</span>Kontakta oss</a>
+            <span><span class="material-symbols-outlined footer-link">call</span>Kundtjänst: 090 - 12 122</span>
+        </div>
+
+        <div>
+            <h3>SNABBLÄNKAR</h3>
+            <a href="#">Information</a>
+            <a href="#">Tillgänglighetsredogörelse</a>
+            <a href="#">GDPR</a>
+        </div>
+    </footer>
+</body>
+</html>
