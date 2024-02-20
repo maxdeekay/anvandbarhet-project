@@ -29,6 +29,12 @@
         </div>
     </header>
 
+    <ul class="breadcrumbs">
+        <li><a href="minasidor.html">Mina sidor</a></li>
+        <li><a href="bokaresa.html">Boka resa</a></li>
+        <li>Enstaka resa</li>
+    </ul>
+
     <main>
         <section id="login">
             <div id="form-info">
@@ -37,14 +43,53 @@
                 </div>
                 <input type="text" id="from" name="from" placeholder="Från...">
                 <input type="text" id="to" name="to" placeholder="Till...">
+                <div class="white-section">
+                    <p>Tid...</p>
+                    <input type="time">
+                </div>
+                <input type="date">
+                <div class="white-section">
+                    <p>Tas med:</p>
+                    <div id="trip-alternatives">
+                        <div>
+                            <div>
+                                <input type="checkbox">
+                                <label>Alternativ</label>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <label>Alternativ</label>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <label>Alternativ</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="checkbox">
+                                <label>Alternativ</label>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <label>Alternativ</label>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <label>Alternativ</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <textarea placeholder="Meddelande till chaufför"></textarea>
             </div>
             
             <div id="form-buttons">
-                <button id="form-login" onclick="window.location.href='minasidor.html'" class="green-button">LÄGG TILL RETUR</button>
-                <button id="create-account" onclick="">BOKA RESA</button>
+                <button id="form-login" onclick="">LÄGG TILL RETUR</button>
+                <button id="create-account" onclick="window.location.href='success.html'" class="green-button">BOKA RESA</button>
             </div>
         </section>
-    
+        </div>
     </main>
 
     <footer>
