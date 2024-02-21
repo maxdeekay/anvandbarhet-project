@@ -40,10 +40,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 
 .accessability-button:hover {
     cursor: pointer;
+    color: #17a2ff;
 }
 
 #login-button {
@@ -281,6 +283,10 @@ article p {
 #mobile-bankid img { width: 60px; filter: brightness(0) invert(1); }
 #form-buttons>button:hover { cursor: pointer; background-color: #17a2ff; }
 .green-button { background-color: #7AAD3F !important; }
+.red-button { background-color: #E30613 !important; }
+.orange-button { background-color: #E38E33 !important; }
+.red-button:hover { background-color: #ec3844 !important; }
+.orange-button:hover { background-color: #eea353 !important; }
 .green-button:hover { background-color: rgb(151, 199, 95) !important; }
 
 .vl {
@@ -373,9 +379,61 @@ ul.breadcrumbs li { display: inline; font-size: 18px; }
 ul.breadcrumbs li a { color: #007AC9; }
 ul.breadcrumbs li a:hover { color: #17a2ff; }
 ul.breadcrumbs li+li:before {
-    padding: 5px;
     color: black;
     content: "/\00a0";
+}
+
+#accessability-wrapper .symbol-text { text-decoration: underline; }
+#accessability-wrapper {
+    display: flex;
+    gap: 1em;
+    position: absolute;
+    top: 110px;
+    right: 10px;
+    color: #007AC9;
+}
+
+#short-nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#short-nav-menu>li { display: inline; }
+#short-nav-menu>li>a { color: black; text-decoration: none; font-weight: 500; font-size: 20px; }
+#short-nav-menu>li>a:hover { text-decoration: underline; }
+
+#accessability-wrapper-header {
+    display: flex;
+    gap: 1em;
+    font-size: 20px;
+}
+
+#confirmation { max-width: 30em; margin: 50px auto; display: flex; flex-direction: column; gap: 2em; align-items: center; }
+
+#confirmed-trip {
+    border: 1px solid #6D6D6D;
+    width: 100%;
+    font-size: 20px;
+}
+
+#confirmed-trip>#confirmed-trip-title {
+    background-color: #E30613;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#confirmed-trip>#confirmed-trip-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 /* MEDIA QUERIES*/
@@ -420,6 +478,24 @@ ul.breadcrumbs li+li:before {
         position: absolute;
         bottom: 5px;
         right: 5px;
+    }
+
+    ul.breadcrumbs { left: 6px; top: 135px; }
+    #accessability-wrapper { left: 5px; top: 105px;}
+}
+
+@media (width <= 470px) {
+    #short-nav-menu {
+        position: absolute;
+        left: 5px;
+        bottom: 5px;
+    }
+
+    #login-button { top: 5px; }
+    #accessability-wrapper-header {
+        position: absolute;
+        left: 5px;
+        bottom: 5px;
     }
 }
 

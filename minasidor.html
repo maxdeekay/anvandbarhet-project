@@ -12,22 +12,28 @@
         <a href="index.html"><img src="images/logotype.svg" alt="" id="logotype"></a>
 
         <div id="header-right">
-            <div class="accessability-button">
-                <span class="material-symbols-outlined">translate</span>
-                <span class="symbol-text">ÖVERSÄTT</span>
-            </div>
-
-            <div class="accessability-button">
-                <span class="material-symbols-outlined">hearing</span>
-                <span class="symbol-text">LYSSNA</span>
-            </div>
-
+            <ul id="short-nav-menu">
+                <li><a href="index.html">STARTSIDA</a></li>
+                <li><a href="minasidor.html">MINA SIDOR</a></li>
+            </ul>
             <button id="login-button" onclick="window.location.href='login.html'">
                 <span class="material-symbols-outlined">login</span>
                 LOGGA IN
             </button>
         </div>
     </header>
+
+    <div id="accessability-wrapper">
+        <div class="accessability-button">
+            <span class="material-symbols-outlined">translate</span>
+            <span class="symbol-text">ÖVERSÄTT</span>
+        </div>
+    
+        <div class="accessability-button">
+            <span class="material-symbols-outlined">hearing</span>
+            <span class="symbol-text">LYSSNA</span>
+        </div>
+    </div>
 
     <main>
         <section id="login">
@@ -46,7 +52,7 @@
             
             <div id="form-buttons">
                 <button id="form-login" onclick="window.location.href='bokaresa.html'">BOKA RESA</button>
-                <button id="form-login" onclick="">MINA RESOR</button>
+                <button id="form-login" onclick="window.location.href='minaresor.html'">MINA RESOR</button>
             </div>
         </section>
     
