@@ -45,15 +45,10 @@
         <section id="login">
             <div id="form-info">
                 <div class="info-title">
-                    <h1>Boka resa</h1>
+                    <h1>Boka återkommande resa</h1>
                 </div>
                 <input type="text" id="from" name="from" placeholder="Från...">
                 <input type="text" id="to" name="to" placeholder="Till...">
-                <div class="white-section">
-                    <p>Tid...</p>
-                    <input type="time">
-                </div>
-                <input type="date">
                 <div class="white-section">
                     <p>Tas med:</p>
                     <div id="trip-alternatives">
@@ -83,12 +78,66 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div id="form-info">
+                <div class="info-title">
+                    <h1>Tidsperiod</h1>
+                </div>
+                <div class="white-section">
+                    <p class="abc">Startdatum:</p>
+                </div>
+                <input type="date">
+                <div class="white-section">
+                    <p class="abc">Slutdatum:</p>
+                </div>
+                <input type="date">
+                <div class="white-section">
+                    <div id="trip-alternatives">
+                        <div>
+                            <div>
+                                <input type="checkbox">
+                                <label>Måndag</label>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <label>Tisdag</label>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <label>Onsdag</label>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <label>Torsdag</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="checkbox">
+                                <label>Fredag</label>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <label>Lördag</label>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <label>Söndag</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="white-section">
+                    <p>Tid...</p>
+                    <input type="time">
+                </div>
                 <textarea placeholder="Meddelande till chaufför"></textarea>
             </div>
             
             <div id="form-buttons">
-                <button id="form-login" onclick="">LÄGG TILL RETUR</button>
-                <button id="create-account" onclick="window.location.href='success.html'" class="green-button">BOKA RESA</button>
+                <button id="form-login" onclick="window.location.href='success.html'">BOKA RESA</button>
+                <button id="create-account" onclick="window.location.href='minasidor.html'" class="red-button">AVBRYT</button>
             </div>
         </section>
         </div>

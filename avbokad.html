@@ -22,7 +22,7 @@
             </button>
         </div>
     </header>
-
+    
     <div id="accessability-wrapper">
         <div class="accessability-button">
             <span class="material-symbols-outlined">translate</span>
@@ -34,28 +34,35 @@
             <span class="symbol-text">LYSSNA</span>
         </div>
     </div>
-
+    <ul class="breadcrumbs">
+        <li><a href="minasidor.html">Mina sidor</a></li>
+        <li>Avbokningsbekräftelse</li>
+    </ul>
     <main>
-        <section id="login">
-            <div id="form-info">
-                <div class="info-title">
-                    <h1>Mina sidor</h1>
+        <section id="confirmation">
+            <h1>Din resa är avbokad!</h1>
+            
+            <div id="confirmed-trip">
+                <div id="confirmed-trip-title">
+                    <p>Bokningsbekräftelse</p>
                 </div>
-                <div id="mina-sidor">
-                    <p>Namn: Ingrid Bergström</p>
-                    <p>Personnummer: 19520119-1122</p>
-                    <p>Adress: Bergsgatan 23A</p>
-                    <p>Postnummer: 928 32</p>
-                    <p>Ort: Katrineholm</p>
+                <div id="confirmed-trip-content">
+                    <div class="status-wrapper">
+                        <div class="status-icon status-icon-red"></div>
+                        <p>Status: Avbokad</p>
+                    </div>
+                    <p>Från: Bergsgatan 23A, Katrineholm</p>
+                    <p>Till: Stenvägen 11B, Katrineholm</p>
+                    <p>Tid: 15:45</p>
+                    <p>Datum: 2024-03-12</p>
                 </div>
             </div>
-            
+
             <div id="form-buttons">
-                <button id="form-login" onclick="window.location.href='bokaresa.html'">BOKA RESA</button>
-                <button id="form-login" onclick="window.location.href='minaresor.html'">MINA RESOR</button>
+                <button onclick="window.location.href='success.html'" class="orange-button">ÅNGRA</button>
+                <button onclick="window.location.href='minasidor.html'">MINA SIDOR</button>
             </div>
         </section>
-    
     </main>
 
     <footer>

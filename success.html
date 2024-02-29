@@ -12,31 +12,47 @@
         <a href="index.html"><img src="images/logotype.svg" alt="" id="logotype"></a>
 
         <div id="header-right">
-            <div class="accessability-button">
-                <span class="material-symbols-outlined">translate</span>
-                <span class="symbol-text">ÖVERSÄTT</span>
-            </div>
-
-            <div class="accessability-button">
-                <span class="material-symbols-outlined">hearing</span>
-                <span class="symbol-text">LYSSNA</span>
-            </div>
-
-            <button id="login-button" onclick="window.location.href='login.html'">
-                <span class="material-symbols-outlined">login</span>
-                LOGGA IN
+            <ul id="short-nav-menu">
+                <li><a href="index.html">STARTSIDA</a></li>
+                <li><a href="minasidor.html">MINA SIDOR</a></li>
+            </ul>
+            <button id="login-button" onclick="window.location.href='logout.html'">
+                <span class="material-symbols-outlined">logout</span>
+                LOGGA UT
             </button>
         </div>
     </header>
-
+    
+    <div id="accessability-wrapper">
+        <div class="accessability-button">
+            <span class="material-symbols-outlined">translate</span>
+            <span class="symbol-text">ÖVERSÄTT</span>
+        </div>
+    
+        <div class="accessability-button">
+            <span class="material-symbols-outlined">hearing</span>
+            <span class="symbol-text">LYSSNA</span>
+        </div>
+    </div>
+    <ul class="breadcrumbs">
+        <li><a href="minasidor.html">Mina sidor</a></li>
+        <li>Bokningsbekräftelse</li>
+    </ul>
     <main>
         <section id="confirmation">
-            <h1>Din resa är bokad!</h1>
+            <h1 class="booked">Din resa är bokad!
+                <span class="material-symbols-outlined">select_check_box</span>
+            </h1>
+            
             <div id="confirmed-trip">
                 <div id="confirmed-trip-title">
                     <p>Bokningsbekräftelse</p>
                 </div>
                 <div id="confirmed-trip-content">
+                    <div class="status-wrapper">
+                        <div class="status-icon status-icon-green"></div>
+                        <p>Status: Bokad</p>
+                    </div>
                     <p>Från: Bergsgatan 23A, Katrineholm</p>
                     <p>Till: Stenvägen 11B, Katrineholm</p>
                     <p>Tid: 15:45</p>
@@ -45,10 +61,10 @@
             </div>
 
             <div id="form-buttons">
-                <button onclick="" class="orange-button">ÄNDRA</button>
-                <button onclick="" class="red-button">AVBOKA</button>
+                <button onclick="window.location.href='enstakaresa.html'" class="orange-button">ÄNDRA</button>
+                <button onclick="window.location.href='avbokaresa.html'" class="red-button">AVBOKA</button>
                 <div class="vl"></div>
-                <button onclick="">MINA SIDOR</button>
+                <button onclick="window.location.href='minasidor.html'">MINA SIDOR</button>
             </div>
         </section>
     </main>

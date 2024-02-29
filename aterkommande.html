@@ -34,25 +34,39 @@
             <span class="symbol-text">LYSSNA</span>
         </div>
     </div>
-
+    <ul class="breadcrumbs">
+        <li><a href="minasidor.html">Mina sidor</a></li>
+        <li><a href="minaresor.html">Mina Resor</a></li>
+        <li>Återkommande resor</li>
+    </ul>
     <main>
         <section id="login">
             <div id="form-info">
                 <div class="info-title">
-                    <h1>Mina sidor</h1>
+                    <h1>Mina återkommande resor</h1>
                 </div>
                 <div id="mina-sidor">
-                    <p>Namn: Ingrid Bergström</p>
-                    <p>Personnummer: 19520119-1122</p>
-                    <p>Adress: Bergsgatan 23A</p>
-                    <p>Postnummer: 928 32</p>
-                    <p>Ort: Katrineholm</p>
+                    <div class="status-wrapper">
+                        <div class="status-icon status-icon-green"></div>
+                        <p>Aktiv</p>
+                    </div>
+                    <p>Från: Bergsgatan 23A, Katrineholm</p>
+                    <p>Till: Stenvägen 11B, Katrineholm</p>
+                    <p>Tid: 15:45</p>
+                    <p>Datum: 2024-03-12</p>
+                    <br>
+                    <p>
+                        Veckodag: Tisdag
+                    </p>
+                    <p>
+                        Periodslut: 2024-12-32
+                    </p>
                 </div>
             </div>
             
             <div id="form-buttons">
-                <button id="form-login" onclick="window.location.href='bokaresa.html'">BOKA RESA</button>
-                <button id="form-login" onclick="window.location.href='minaresor.html'">MINA RESOR</button>
+                <button id="form-login" onclick="window.location.href=''" class="orange-button">ÄNDRA</button>
+                <button id="form-login" onclick="window.location.href=''" class="red-button">AVBOKA</button>
             </div>
         </section>
     
