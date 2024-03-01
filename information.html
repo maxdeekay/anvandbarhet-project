@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <title>Katrineholms färdtjänst</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logotype.svg" alt="" id="logotype"></a>
+
+        <div id="header-right">
+            <div id="accessability-wrapper-header">
+                <div class="accessability-button">
+                    <span class="material-symbols-outlined">translate</span>
+                    <span class="symbol-text">ÖVERSÄTT</span>
+                </div>
+    
+                <div class="accessability-button">
+                    <span class="material-symbols-outlined">hearing</span>
+                    <span class="symbol-text">LYSSNA</span>
+                </div>
+            </div>
+
+            <button id="login-button" onclick="window.location.href='login.html'">
+                <span class="material-symbols-outlined">login</span>
+                LOGGA IN
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div id="red-menu-wrapper">
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="information.html" class="red-active">Information</a></li>
+                <li><a href="login.html">Mina sidor</a></li>
+            </ul>
+        </div>
+
+        <article>
+            <h1 class="center-heading">Information om färdtjänst!</h1>
+            <p>
+                Du kan beviljas färdtjänst om du har en funktionsnedsättning som bedömds vara längre än 3 månader. Din funktionsnedsättning ska innefatta svårigheter att självständigt kunna resa med allmän kollektivtrafik. Du kan klicka här för att komma till kommunens webbplats för att ansöka om färdtjänst.
+            </p>
+            <p>
+                Du bokar din resa på denna webbplats efter du blivit beviljad färdtjänst av kommunen. Detta gör du i ett inloggat läge under ”Mina sidor”.
+            </p>
+            <div class="text-divider"></div>
+            <h2 class="left-heading">Priser</h2>
+            <p>
+                Avgiften betalas kontant eller med kort direkt till chauffören.
+            </p>
+            <ul class="information-list">
+                <li>Mindre än 6 kilometer = 50 kronor (zon 1)</li>
+                <li>6-11 kilometer = 60 kronor (zon 2)</li>
+                <li>Mer än 11 kilometer - kommungränsen = 70 kronor (zon 3)</li>
+            </ul>
+            <p>
+                OBS: Utanför kommungränsen tillkommer 40 kronor på påbörjad mil om resan är längre än 3 mil.
+            </p>
+            <div class="text-divider"></div>
+            <h2 class="left-heading">Medresenärer och ledsagare</h2>
+            <ul class="information-list">
+                <li>Medresenärer behöver åka samma sträcka som du och betalar därefter samma avgift</li>
+                <li>Ledsagare åker gratis</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <div>
+            <h3>KATRINEHOLM<br>FÄRDTJÄNST</h3>
+            <a href="#"><span class="material-symbols-outlined footer-link">mail</span>Kontakta oss</a>
+            <span><span class="material-symbols-outlined footer-link">call</span>Kundtjänst: 090 - 12 122</span>
+        </div>
+
+        <div>
+            <h3>SNABBLÄNKAR</h3>
+            <a href="information.html">Information</a>
+            <a href="information.html">Tillgänglighetsredogörelse</a>
+            <a href="information.html">GDPR</a>
+        </div>
+    </footer>
+</body>
+</html>

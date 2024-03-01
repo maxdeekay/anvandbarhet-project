@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <title>Katrineholms färdtjänst</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logotype.svg" alt="" id="logotype"></a>
+
+        <div id="header-right">
+            <div id="accessability-wrapper-header">
+                <div class="accessability-button">
+                    <span class="material-symbols-outlined">translate</span>
+                    <span class="symbol-text">ÖVERSÄTT</span>
+                </div>
+    
+                <div class="accessability-button">
+                    <span class="material-symbols-outlined">hearing</span>
+                    <span class="symbol-text">LYSSNA</span>
+                </div>
+            </div>
+
+            <button id="login-button" onclick="window.location.href='login.html'">
+                <span class="material-symbols-outlined">login</span>
+                LOGGA IN
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div id="red-menu-wrapper">
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="kontakt.html" class="red-active">Kontakt</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="login.html">Mina sidor</a></li>
+            </ul>
+        </div>
+
+        <section id="contact">
+            <h1>Kontakta oss</h1>
+            <div class="contact-wrapper">
+                <div class="contact-title">
+                    <h2>Använd kontaktformulär</h2>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-input">
+                        <input type="text" id="from" name="from" placeholder="Förnamn">
+                        <input type="text" id="to" name="to" placeholder="Efternamn">
+                        <input type="text" id="to" name="to" placeholder="Epostadress">
+                        <input type="text" id="to" name="to" placeholder="Telefonnummer">
+                        <textarea placeholder="Skriv ditt meddelande här"></textarea>
+                    </div>
+                    
+                    <button class="contact-button">SKICKA</button>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h3>KATRINEHOLM<br>FÄRDTJÄNST</h3>
+            <a href="#"><span class="material-symbols-outlined footer-link">mail</span>Kontakta oss</a>
+            <span><span class="material-symbols-outlined footer-link">call</span>Kundtjänst: 090 - 12 122</span>
+        </div>
+
+        <div>
+            <h3>SNABBLÄNKAR</h3>
+            <a href="#">Information</a>
+            <a href="#">Tillgänglighetsredogörelse</a>
+            <a href="#">GDPR</a>
+        </div>
+    </footer>
+</body>
+</html>
