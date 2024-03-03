@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scripts/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <title>Katrineholms färdtjänst</title>
@@ -20,6 +21,44 @@
                 <span class="material-symbols-outlined">logout</span>
                 LOGGA UT
             </button>
+        </div>
+        <div id="header-right-mobile">
+            <a href="login.html">
+                <div class="login-icon">
+                    <span class="material-symbols-outlined">login</span>
+                </div>
+            </a>
+            <div id="open-menu">
+                <p>MENY</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+
+            <div id="mobile-menu">
+                <div id="close-menu">
+                    <p>STÄNG MENY</p>
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+                <button onclick="window.location.href='login.html'"><span class="material-symbols-outlined">login</span>LOGGA IN</button>
+                <ul>
+                    <li class="mobile-menu-active"><a href="index.html"></a>Startsida</li>
+                    <li><a href="information.html"></a>Information</li>
+                    <li><a href="kontakt.html"></a>Kontakt</li>
+                    <li><a href="minasidor.html"></a>Mina sidor</li>
+                </ul>
+                <div class="text-divider"></div>
+                <div id="accessability-wrapper-header">
+                    <div class="accessability-button">
+                        <span class="symbol-text">ÖVERSÄTT</span>
+                        <span class="material-symbols-outlined">translate</span>
+                    </div>
+        
+                    <div class="accessability-button">
+                        <span class="symbol-text">LYSSNA</span>
+                        <span class="material-symbols-outlined">hearing</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
 
@@ -77,7 +116,7 @@
                                 <label>Permobil</label>
                             </div>
                             <div>
-                                <input type="checkbox">
+                                <input type="checkbox" checked>
                                 <label>Inget</label>
                             </div>
                         </div>
@@ -85,9 +124,20 @@
                 </div>
                 <textarea placeholder="Meddelande till chaufför"></textarea>
             </div>
+
+            <div id="return-form-info">
+                <div class="info-title">
+                    <h1>Returresa</h1>
+                </div>
+                <div class="white-section">
+                    <p>Tid...</p>
+                    <input type="time">
+                </div>
+                <input type="date">
+            </div>
             
             <div id="form-buttons">
-                <button id="form-login" onclick="">LÄGG TILL RETUR</button>
+                <button id="form-login">LÄGG TILL RETUR</button>
                 <button id="create-account" onclick="window.location.href='success.html'" class="green-button">BOKA RESA</button>
             </div>
         </section>

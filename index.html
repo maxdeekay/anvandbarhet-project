@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scripts/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <title>Katrineholms färdtjänst</title>
@@ -40,6 +41,33 @@
                 <p>MENY</p>
                 <span class="material-symbols-outlined">menu</span>
             </div>
+
+            <div id="mobile-menu">
+                <div id="close-menu">
+                    <p>STÄNG MENY</p>
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+                <button onclick="window.location.href='login.html'"><span class="material-symbols-outlined">login</span>LOGGA IN</button>
+                <ul>
+                    <li class="mobile-menu-active"><a href="index.html"></a>Startsida</li>
+                    <li><a href="information.html"></a>Information</li>
+                    <li><a href="kontakt.html"></a>Kontakt</li>
+                    <li><a href="minasidor.html"></a>Mina sidor</li>
+                </ul>
+                <div class="text-divider"></div>
+                <div id="accessability-wrapper-header">
+                    <div class="accessability-button">
+                        <span class="symbol-text">ÖVERSÄTT</span>
+                        <span class="material-symbols-outlined">translate</span>
+                    </div>
+        
+                    <div class="accessability-button">
+                        <span class="symbol-text">LYSSNA</span>
+                        <span class="material-symbols-outlined">hearing</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
 
@@ -90,12 +118,12 @@
                 Katrineholms kommun står bakom denna sida för bokning av färdtjänst. Vi hjälper dig, att på ett säkert och bekvämt sätt, ta dig från och till dina önskade destinationer. Vi förser dig med transport och hjälpsam personal.
             </p>
             <p>
-                För att boka färdtjänst behöver du ett färdtjänstkort som du beviljats av kommunen. Du kan klicka här för att ansöka direkt på Katrineholms kommuns webbplats.
+                För att boka färdtjänst behöver du ett färdtjänstkort som du beviljats av kommunen. Du kan klicka <a class="inline-link" href="https://www.katrineholm.se/omsorg--stod/fardtjanst--riksfardtjanst.html">här</a> för att ansöka direkt på Katrineholms kommuns webbplats.
             </p>
             <p>
-                Efter din ansökan blivit beviljad skapar du ett konto på denna webbplats. För mer information om färdtjänst kan du klicka här.
+                Efter din ansökan blivit beviljad skapar du ett konto på denna webbplats. För mer information om färdtjänst kan du klicka <a class="inline-link" href="information.html">här</a>.
             </p>
-            <button class="big-button">ANSÖK NU</button>
+            <button class="big-button" onclick="window.location.href='https://e.katrineholm.se/oversikt/overview/287'">ANSÖK NU</button>
         </article>
     </main>
 
@@ -109,8 +137,8 @@
         <div>
             <h3>SNABBLÄNKAR</h3>
             <a href="information.html">Information</a>
-            <a href="information.html">Tillgänglighetsredogörelse</a>
-            <a href="information.html">GDPR</a>
+            <a href="redogorelse.html">Tillgänglighetsredogörelse</a>
+            <a href="#">GDPR</a>
         </div>
     </footer>
 </body>
