@@ -583,6 +583,34 @@ ul.breadcrumbs li+li:before {
 .contact-container a { color: #007AC9; }
 .space { height: 80px; }
 
+#header-right-mobile { display: none; }
+#header-right-mobile a { text-decoration: none; }
+
+.login-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #007AC9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-icon:hover { background-color: #17a2ff;}
+.login-icon>span { margin-right: 2px; font-size: 40px; }
+
+#open-menu {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#open-menu:hover { cursor: pointer; }
+
+#open-menu>span { font-size: 32px; }
+#open-menu>p { font-size: 22px; }
+
 /* MEDIA QUERIES*/
 @media (width <= 924px) {
     #hero { 
@@ -603,7 +631,7 @@ ul.breadcrumbs li+li:before {
     article { margin-top: 30px; padding: 5px; }
 }
 
-@media (width <= 610px) {
+@media (width <= 635px) {
     footer {
         flex-direction: column;
         gap: 1em;
@@ -611,24 +639,14 @@ ul.breadcrumbs li+li:before {
     }
     
     footer>div { gap: 5px; margin-left: 20px;}
-
-    header { 
-        align-items: start; 
-        justify-content: space-between; 
-        padding: 5px 5px 0 5px;
-        position: relative;
-    }
-
-    #header-right { gap: 10px; }
-    
-    #login-button {
-        position: absolute;
-        bottom: 5px;
-        right: 5px;
-    }
-
     ul.breadcrumbs { left: 6px; top: 135px; }
-    #accessability-wrapper { left: 5px; top: 105px;}
+
+    header { justify-content: space-between; padding: 0 10px 0 10px; }
+    #header-right { display: none; }
+    #header-right-mobile { 
+        display: flex;
+        gap: 15px;
+    }
 }
 
 @media (width <= 470px) {
