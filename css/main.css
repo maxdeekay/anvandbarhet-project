@@ -133,7 +133,10 @@ footer .footer-link { margin-right: 8px; }
 
 #search>span {
     font-size: 32px;
+    transition: all 0.2s ease;
 }
+
+#search>span:hover { box-shadow: 0 0 10px rgba(0,0,0, 0.7); }
 
 .rounded-icon {
     border-radius: 50%;
@@ -162,6 +165,11 @@ footer .footer-link { margin-right: 8px; }
     height: 90px;
     width: 280px;
     border: 1px solid #8A8A8A;
+    transition: all 0.2s ease;
+}
+
+#nav-buttons-big>a>div:hover {
+    box-shadow: 0 0 10px rgba(0,0,0, 0.7);
 }
 
 #nav-buttons-big .nav-buttons-big-left {
