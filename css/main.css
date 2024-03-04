@@ -612,19 +612,21 @@ ul.breadcrumbs li+li:before {
     align-items: center;
     gap: 5px;
 }
-
+#close-menu { margin-right: -10px; }
 #open-menu:hover, #close-menu:hover { cursor: pointer; }
 
-#open-menu>span, #close-menu>span { font-size: 32px; }
-#open-menu>p, #close-menu>p { font-size: 22px; }
+#open-menu>span { font-size: 30px; }
+#open-menu>p { font-size: 20px; }
+#close-menu>span { font-size: 40px; }
+#close-menu>p { font-size: 30px; }
 #mobile-menu {
     display: none;
     flex-direction: column;
     align-items: end;
-    padding: 60px;
-    gap: 70px;
+    padding: 20px 40px 0px 60px;
+    gap: 50px;
     z-index: 1;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -656,7 +658,7 @@ ul.breadcrumbs li+li:before {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 36px;
 }
 
 #mobile-menu li {
