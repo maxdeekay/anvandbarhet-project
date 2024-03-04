@@ -15,7 +15,7 @@
         <div id="header-right">
             <ul id="short-nav-menu">
                 <li><a href="index.html">STARTSIDA</a></li>
-                <li><a href="minasidor.html">MINA SIDOR</a></li>
+                <li><a href="minasidor.html" style="text-decoration: underline;">MINA SIDOR</a></li>
             </ul>
             <button id="login-button" onclick="window.location.href='logout.html'">
                 <span class="material-symbols-outlined">logout</span>
@@ -72,19 +72,19 @@
             <span class="symbol-text">LYSSNA</span>
         </div>
     </div>
-    
     <ul class="breadcrumbs">
         <li><a href="minasidor.html">Mina sidor</a></li>
-        <li>Boka resa</li>
+        <li><a href="minaresor.html">Mina resor</a></li>
+        <li>Sparade resor</li>
     </ul>
 
     <main>
         <section id="login">
-            <h1>Välj typ av resa:</h1>
-            <div id="form-buttons" class="long-button">       
-                <button id="form-login" onclick="window.location.href='enstakaresa.html'">BOKA ENSTAKA RESA</button>
-                <button onclick="window.location.href='bokaaterkommande.html'">BOKA ÅTERKOMMANDE RESA</button>
-                <button onclick="window.location.href='sparaderesor.html'">BOKA EN SPARAD RESA</button>
+            <h1>Din resa är borttagen!</h1>
+            
+            <div id="form-buttons">
+                <button onclick="window.location.href='bokaresa.html'">BOKA NY RESA</button>
+                <button onclick="window.location.href='minasidor.html'">MINA SIDOR</button>
             </div>
         </section>
     

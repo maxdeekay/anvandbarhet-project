@@ -236,7 +236,7 @@ article p {
     padding: 5px;
 }
 
-#login>#form-info>.info-title, #login>#return-form-info>.info-title {
+#login>.form-info>.info-title, #login>#return-form-info>.info-title {
     background-color: #E30613;
     color: white;
     display: flex;
@@ -246,9 +246,9 @@ article p {
     height: 50px;
 }
 
-#login>#form-info { background-color: #6D6D6D; display: flex; flex-direction: column; gap: 1px; border: 1px solid #6D6D6D; width: 100%; }
+#login>.form-info { background-color: #6D6D6D; display: flex; flex-direction: column; gap: 1px; border: 1px solid #6D6D6D; width: 100%; }
 #login>#return-form-info { background-color: #6D6D6D; display: none; flex-direction: column; gap: 1px; border: 1px solid #6D6D6D; width: 100%; }
-#login>#form-info>input[type=text] {
+#login>.form-info>input[type=text] {
     height: 50px;
     font-size: 18px;
     padding: 0 10px;
@@ -256,8 +256,8 @@ article p {
     border: 0;
 }
 
-#login>#form-info>input::placeholder, #login>#return-form-info>input::placeholder { color: black; }
-#login>#form-info>input:focus, #login>#return-form-info>input:focus { outline: 0; }
+#login>.form-info>input::placeholder, #login>#return-form-info>input::placeholder { color: black; }
+#login>.form-info>input:focus, #login>#return-form-info>input:focus { outline: 0; }
 
 #form-buttons {
     display: flex;
@@ -338,18 +338,18 @@ input[type=date] {
     background-color: #D9D9D9;
 }
 
-#trip-alternatives { display: flex; }
-#trip-alternatives>div { padding: 0 30px 0 30px; }
-#trip-alternatives>div>div>label { font-size: 18px; }
+.trip-alternatives { display: flex; }
+.trip-alternatives>div { padding: 0 30px 0 30px; }
+.trip-alternatives>div>div>label { font-size: 18px; }
 
-#trip-alternatives>div>div {
+.trip-alternatives>div>div {
     padding: 5px;
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-#trip-alternatives>div>div>input[type="checkbox"] {
+.trip-alternatives>div>div>input[type="checkbox"] {
     border-radius: 0;
     height: 30px;
     width: 30px;
@@ -405,7 +405,7 @@ ul.breadcrumbs li+li:before {
 #short-nav-menu>li>a { color: black; text-decoration: none; font-weight: 500; font-size: 20px; }
 #short-nav-menu>li>a:hover { text-decoration: underline; }
 
-#accessability-wrapper-header {
+.accessability-wrapper-header {
     display: flex;
     gap: 1em;
     font-size: 20px;
@@ -456,7 +456,7 @@ ul.breadcrumbs li+li:before {
     background-color: #9B9B9B;
 }
 
-.left-heading { align-self: start; font-weight: 400; }
+.left-heading { align-self: start; font-weight: 400; margin-bottom: -20px;}
 .center-heading { font-weight: 400; align-self: center; }
 .information-list { font-size: 18px; padding-inline-start: 0; margin-inline-start: 50px; }
 .information-list>li::marker { color: #5B5B5B; font-size: 25px; }
@@ -471,7 +471,7 @@ ul.breadcrumbs li+li:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
     height: 100%;
     list-style-type: none;
 }
@@ -658,10 +658,12 @@ ul.breadcrumbs li+li:before {
 #mobile-menu li:hover { text-decoration: underline; cursor: pointer; }
 #mobile-menu .mobile-menu-active { text-decoration: underline; }
 
-#mobile-menu #accessability-wrapper-header { color: #007AC9; flex-direction: column; align-items: end; font-size: 30px; }
+#mobile-menu .accessability-wrapper-header { color: #007AC9; flex-direction: column; align-items: end; font-size: 30px; }
 #mobile-menu .symbol-text { text-decoration: underline; }
 #mobile-menu .material-symbols-outlined { font-size: 44px; }
 #mobile-menu .accessability-button { gap: 20px; }
+#mobile-menu a { color: black; }
+footer a:hover { color: white !important; }
 
 /* MEDIA QUERIES*/
 @media (width <= 924px) {
@@ -684,6 +686,8 @@ ul.breadcrumbs li+li:before {
 }
 
 @media (width <= 635px) {
+    #red-menu-wrapper { display: none; }
+
     footer {
         flex-direction: column;
         gap: 1em;
@@ -715,7 +719,7 @@ ul.breadcrumbs li+li:before {
 }
 
 @media (width <= 350px) {
-    #trip-alternatives { flex-direction: column; }
+    .trip-alternatives { flex-direction: column; }
 }
 
 @media (width <= 400px) {

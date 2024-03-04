@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <title>Katrineholms färdtjänst</title>
@@ -20,6 +21,43 @@
                 <span class="material-symbols-outlined">logout</span>
                 LOGGA UT
             </button>
+        </div>
+        <div id="header-right-mobile">
+            <a href="login.html">
+                <div class="login-icon">
+                    <span class="material-symbols-outlined">login</span>
+                </div>
+            </a>
+            <div id="open-menu">
+                <p>MENY</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+
+            <div id="mobile-menu">
+                <div id="close-menu">
+                    <p>STÄNG MENY</p>
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+                <button onclick="window.location.href='login.html'"><span class="material-symbols-outlined">login</span>LOGGA IN</button>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="minasidor.html">Mina sidor</a></li>
+                </ul>
+                <div class="text-divider"></div>
+                <div class="accessability-wrapper-header">
+                    <div class="accessability-button">
+                        <span class="symbol-text">ÖVERSÄTT</span>
+                        <span class="material-symbols-outlined">translate</span>
+                    </div>
+        
+                    <div class="accessability-button">
+                        <span class="symbol-text">LYSSNA</span>
+                        <span class="material-symbols-outlined">hearing</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     
@@ -74,8 +112,8 @@
 
         <div>
             <h3>SNABBLÄNKAR</h3>
-            <a href="#">Information</a>
-            <a href="#">Tillgänglighetsredogörelse</a>
+            <a href="information.html">Information</a>
+            <a href="redogorelse.html">Tillgänglighetsredogörelse</a>
             <a href="#">GDPR</a>
         </div>
     </footer>

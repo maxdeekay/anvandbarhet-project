@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <title>Katrineholms färdtjänst</title>
@@ -40,13 +40,13 @@
                 </div>
                 <button onclick="window.location.href='login.html'"><span class="material-symbols-outlined">login</span>LOGGA IN</button>
                 <ul>
-                    <li class="mobile-menu-active"><a href="index.html"></a>Startsida</li>
-                    <li><a href="information.html"></a>Information</li>
-                    <li><a href="kontakt.html"></a>Kontakt</li>
-                    <li><a href="minasidor.html"></a>Mina sidor</li>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="minasidor.html">Mina sidor</a></li>
                 </ul>
                 <div class="text-divider"></div>
-                <div id="accessability-wrapper-header">
+                <div class="accessability-wrapper-header">
                     <div class="accessability-button">
                         <span class="symbol-text">ÖVERSÄTT</span>
                         <span class="material-symbols-outlined">translate</span>
@@ -58,7 +58,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </header>
 
@@ -138,10 +137,9 @@
             
             <div id="form-buttons">
                 <button id="form-login">LÄGG TILL RETUR</button>
-                <button id="create-account" onclick="window.location.href='success.html'" class="green-button">BOKA RESA</button>
+                <button onclick="window.location.href='success.html'" class="green-button">BOKA RESA</button>
             </div>
         </section>
-        </div>
     </main>
 
     <footer>
@@ -153,8 +151,8 @@
 
         <div>
             <h3>SNABBLÄNKAR</h3>
-            <a href="#">Information</a>
-            <a href="#">Tillgänglighetsredogörelse</a>
+            <a href="information.html">Information</a>
+            <a href="redogorelse.html">Tillgänglighetsredogörelse</a>
             <a href="#">GDPR</a>
         </div>
     </footer>
