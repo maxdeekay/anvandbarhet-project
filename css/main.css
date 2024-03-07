@@ -181,12 +181,12 @@ footer .footer-link { margin-right: 8px; }
     align-items: center;
 }
 
-.book { background-color: #E38E33; }
+.book { background-color: #E07400; }
 .contact { background-color: #E30613; }
-.info { background-color: #7AAD3F; }
-.book>div { color: #E38E33 !important; }
+.info { background-color: #6E9D39; }
+.book>div { color: #E07400 !important; }
 .contact>div { color: #E30613 !important; }
-.info>div { color: #7AAD3F !important; }
+.info>div { color: #6E9D39 !important; }
 
 #nav-buttons-big .nav-buttons-big-left>span {
     font-size: 40px;
@@ -289,12 +289,12 @@ article p {
 #form-buttons>button>img { vertical-align: -17px; }
 #mobile-bankid img { width: 60px; filter: brightness(0) invert(1); }
 #form-buttons>button:hover { cursor: pointer; background-color: #17a2ff; }
-.green-button { background-color: #7AAD3F !important; }
+.green-button { background-color: #577C2D !important; }
 .red-button { background-color: #E30613 !important; }
-.orange-button { background-color: #E38E33 !important; }
+.orange-button { background-color: #AB6317 !important; }
 .red-button:hover { background-color: #ec3844 !important; }
-.orange-button:hover { background-color: #eea353 !important; }
-.green-button:hover { background-color: rgb(151, 199, 95) !important; }
+.orange-button:hover { background-color: #bb7122 !important; }
+.green-button:hover { background-color: #739c43 !important; }
 
 .vl {
     border-left: 4px solid #989898;
@@ -453,9 +453,9 @@ ul.breadcrumbs li+li:before {
     border-radius: 50%;
 }
 
-.booked>span { color: #7AAD3F; font-size: 30px; vertical-align: -6px; margin-left: 5px; }
+.booked>span { color: #577C2D; font-size: 30px; vertical-align: -6px; margin-left: 5px; }
 .warning { font-size: 22px; }
-.warning>span { color: #E38E33; font-size: 30px; vertical-align: -6px; margin-right: 5px; }
+.warning>span { color: #AB6317; font-size: 30px; vertical-align: -6px; margin-right: 5px; }
 .abc { margin-bottom: -8px !important; }
 
 .text-divider {
